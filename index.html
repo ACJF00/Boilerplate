@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=".././style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Boilerplate</title>
+  </head>
+  <body>
+    <nav
+      class="fixed w-screen border-gray-200 bg-bprimary z-[9999] h-20 flex top-0">
+      <div
+        class="absolute w-1/2 h-full heropattern-graphpaper-white opacity-40"></div>
+      <div
+        class="absolute top-0 w-1/2 h-full bg-gradient-to-r from-transparent to-izoDarkGray"></div>
+      <div
+        class="z-10 flex flex-wrap items-center content-center justify-between w-full max-w-screen-xl p-4 mx-auto">
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="https://placehold.co/100x50" class="h-14" alt="Logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-xl md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14">
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <ul
+            class="flex flex-col items-center p-4 mt-4 font-medium text-white border border-gray-100 rounded-xl md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <li>
+              <a
+                href="/"
+                class="block rounded md:bg-transparent"
+                aria-current="page"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarHeroLink"
+                data-dropdown-toggle="dropdownNavbarHero"
+                data-dropdown-trigger="hover"
+                class="flex items-center justify-between w-full px-3 py-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto hover:text-izoRed">
+                Services
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbarHero"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 shadow rounded-xl w-44">
+                <ul
+                  class="py-2 text-sm text-gray-700"
+                  aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a
+                      href="/chauffage.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Chauffage</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/salles-de-bain.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Salles de bain</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/energies-renouvelables.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Energies renouvelables</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="/galerie.html"
+                class="block px-3 py-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-izoRed md:p-0"
+                >Galerie photos</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contact.html"
+                class="block px-3 py-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-izoRed md:p-0"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ////////////////////// TEXT IMAGE ////////////////////// -->
+    <section
+      class="flex flex-col-reverse gap-8 p-8 m-auto mt-20 lg:flex-row site-wrap">
+      <div
+        class="flex flex-col w-full gap-8 px-4 py-4 lg:px-12 lg:py-12 lg:w-1/2">
+        <div>
+          <span class="subtitle-span">SOUS TITRE</span>
+          <h2 class="h2-big">Titre</h2>
+        </div>
+
+        <p class="text-bprimary">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
+          culpa illo, eaque ut facilis ab nostrum aliquam, velit deserunt animi
+          non debitis. A tenetur neque obcaecati quam voluptas fugit asperiores.
+        </p>
+        <a href="#" class="btn-primary">Bouton</a>
+      </div>
+      <div class="w-full lg:w-1/2">
+        <img
+          src="https://placehold.co/650x520"
+          alt="Izodom"
+          class="object-cover w-full h-full rounded-xl" />
+      </div>
+    </section>
+    <!-- ////////////////////// IMAGE TEXT ////////////////////// -->
+    <section
+      class="flex flex-col-reverse gap-8 p-8 m-auto mt-20 lg:flex-row site-wrap">
+      <div class="w-full lg:w-1/2">
+        <img
+          src="https://placehold.co/650x520"
+          alt="Izodom"
+          class="object-cover w-full h-full rounded-xl" />
+      </div>
+      <div
+        class="flex flex-col w-full gap-8 px-4 py-4 lg:px-12 lg:py-12 lg:w-1/2">
+        <div>
+          <span class="subtitle-span">SOUS TITRE</span>
+          <h2 class="h2-big">Titre</h2>
+        </div>
+
+        <p class="text-bprimary">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
+          culpa illo, eaque ut facilis ab nostrum aliquam, velit deserunt animi
+          non debitis. A tenetur neque obcaecati quam voluptas fugit asperiores.
+        </p>
+        <a href="#" class="btn-primary">Bouton</a>
+      </div>
+    </section>
+    <!-- ////////////////////// TESTOMNIES ////////////////////// -->
+    <section class="overflow-hidden rounded-xl site-wrap">
+      <div class="m-auto mb-8 text-center">
+        <span class="subtitle-span">Titre</span>
+      </div>
+      <div class="overflow-hidden swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col overflow-hidden shadow-xl lg:flex-row rounded-xl">
+              <div class="w-full p-8 bg-white lg:w-1/2 text-block">
+                <p class="testimony-text text-bprimary">
+                  "Si quelqu'un envisage de construire une maison à économie
+                  d'énergie qui ne coûtera pas cher en chauffage, je recommande
+                  les solutions éprouvées d'IZODOM."
+                </p>
+                <h4 class="mt-[28px] text-xl uppercase">Marcin Hakiel</h4>
+                <span class="text-izoLightGray">Danseur</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col overflow-hidden shadow-xl lg:flex-row rounded-xl">
+              <div class="w-full p-8 bg-white lg:w-1/2 text-block">
+                <p class="testimony-text text-bprimary">
+                  "IZODOM est un système de construction que nous avons choisi
+                  pour la rapidité de construction d'une maison. Aujourd'hui,
+                  après un an d'utilisation, il nous a permis de constater des
+                  économies sur nos factures."
+                </p>
+                <h4 class="mt-[28px] text-xl uppercase">Sonia</h4>
+                <a
+                  href="https://www.instagram.com/nasza_odwazna_stodola/"
+                  target="_blank"
+                  class="text-izoGreen"
+                  >@nasza_odwazna_stodola</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="flex flex-col overflow-hidden shadow-xl lg:flex-row rounded-xl">
+              <div class="w-full p-8 bg-white lg:w-1/2 text-block">
+                <p class="testimony-text text-bprimary">
+                  "Le système IZOPassive d'IZODOM a été utilisé pour construire,
+                  entre autres, le palais de la famille royale au Maroc".
+                </p>
+                <h4 class="mt-[28px] text-xl uppercase">Maroko</h4>
+                <span class="text-izoLightGray"
+                  >Le palais de la famille royale.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- //////////////////////// FAQ //////////////////////// -->
+    <section>
+      <div
+        class="flex flex-col items-center px-4 py-12 mx-auto max-w-7xl sm:py-16 sm:px-6 lg:px-8">
+        <h2 class="font-bold uppercase">FAQ</h2>
+        <h3 class="h2-secondary">Parlons le même langage</h3>
+        <div class="max-w-3xl mx-auto divide-y-2 divide-gray-200">
+          <dl class="mt-6 space-y-6 divide-y divide-gray-200">
+            <div class="pt-6">
+              <dt class="text-lg">
+                <button
+                  type="button"
+                  class="flex items-start justify-between w-full text-left text-gray-400"
+                  aria-controls="faq-0"
+                  aria-expanded="false">
+                  <span class="font-medium text-gray-900"
+                    >What&#039;s the best thing about Switzerland?</span
+                  >
+                  <span class="flex items-center ml-6 h-7">
+                    <img src="./assets/chevron-down.svg" class="w-6 h-6" />
+                  </span>
+                </button>
+              </dt>
+              <dd class="pr-12 mt-2" id="faq-0">
+                <p class="text-base text-gray-500">
+                  I don&#039;t know, but the flag is a big plus. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Quas cupiditate
+                  laboriosam fugiat.
+                </p>
+              </dd>
+            </div>
+          </dl>
+          <dl class="mt-6 space-y-6 divide-y divide-gray-200">
+            <div class="pt-6">
+              <dt class="text-lg">
+                <button
+                  type="button"
+                  class="flex items-start justify-between w-full text-left text-gray-400"
+                  aria-controls="faq-0"
+                  aria-expanded="false">
+                  <span class="font-medium text-gray-900"
+                    >What&#039;s the best thing about Switzerland?</span
+                  >
+                  <span class="flex items-center ml-6 h-7">
+                    <img
+                      src="./assets/chevron-down.svg"
+                      class="w-6 h-6 rotate-180" />
+                  </span>
+                </button>
+              </dt>
+              <dd class="hidden pr-12 mt-2" id="faq-1">
+                <p class="text-base text-gray-500">
+                  I don&#039;t know, but the flag is a big plus. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Quas cupiditate
+                  laboriosam fugiat.
+                </p>
+              </dd>
+            </div>
+          </dl>
+          <dl class="mt-6 space-y-6 divide-y divide-gray-200">
+            <div class="pt-6">
+              <dt class="text-lg">
+                <!-- Expand/collapse question button -->
+                <button
+                  type="button"
+                  class="flex items-start justify-between w-full text-left text-gray-400"
+                  aria-controls="faq-0"
+                  aria-expanded="false">
+                  <span class="font-medium text-gray-900"
+                    >What&#039;s the best thing about Switzerland?</span
+                  >
+                  <span class="flex items-center ml-6 h-7">
+                    <img
+                      src="./assets/chevron-down.svg"
+                      class="w-6 h-6 rotate-180" />
+                  </span>
+                </button>
+              </dt>
+              <dd class="hidden pr-12 mt-2" id="faq-2">
+                <p class="text-base text-gray-500">
+                  I don&#039;t know, but the flag is a big plus. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Quas cupiditate
+                  laboriosam fugiat.
+                </p>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/84f87a4f79.js"
+      crossorigin="anonymous"></script>
+    <script src="./js/faq.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./js/swipers.js"></script>
+  </body>
+</html>

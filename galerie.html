@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=".././style/output.css" />
+    <title>Boilerplate</title>
+  </head>
+  <body>
+    <nav
+      class="fixed w-screen border-gray-200 bg-bprimary z-[9999] h-20 flex top-0">
+      <div
+        class="absolute w-1/2 h-full heropattern-graphpaper-white opacity-40"></div>
+      <div
+        class="absolute top-0 w-1/2 h-full bg-gradient-to-r from-transparent to-izoDarkGray"></div>
+      <div
+        class="z-10 flex flex-wrap items-center content-center justify-between w-full max-w-screen-xl p-4 mx-auto">
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="https://placehold.co/100x50" class="h-14" alt="Logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-xl md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14">
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <ul
+            class="flex flex-col items-center p-4 mt-4 font-medium text-white border border-gray-100 rounded-xl md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <li>
+              <a
+                href="/"
+                class="block rounded md:bg-transparent"
+                aria-current="page"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarHeroLink"
+                data-dropdown-toggle="dropdownNavbarHero"
+                data-dropdown-trigger="hover"
+                class="flex items-center justify-between w-full px-3 py-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto hover:text-izoRed">
+                Services
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbarHero"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 shadow rounded-xl w-44">
+                <ul
+                  class="py-2 text-sm text-gray-700"
+                  aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a
+                      href="/chauffage.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Chauffage</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/salles-de-bain.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Salles de bain</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/energies-renouvelables.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Energies renouvelables</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="/galerie-photos.html"
+                class="block px-3 py-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-izoRed md:p-0"
+                >Galerie photos</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contact.html"
+                class="block px-3 py-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-izoRed md:p-0"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- //////////////////// GALLERY //////////////////// -->
+    <section class="grid grid-cols-2 gap-8 mt-20 lg:grid-cols-4 site-wrap">
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+      <a
+        data-fslightbox
+        href="https://placehold.co/350x210"
+        class="relative flex items-end h-48 overflow-hidden bg-gray-100 shadow-lg rounded-xl group md:h-52">
+        <img
+          src="https://placehold.co/350x210"
+          loading="lazy"
+          alt=""
+          class="absolute inset-0 object-cover object-center w-full h-full transition duration-200 group-hover:scale-110" />
+
+        <div
+          class="absolute inset-0 opacity-50 pointer-events-none bg-gradient-to-t from-gray-800 via-transparent to-transparent"></div>
+
+        <span
+          class="relative inline-block mb-3 ml-4 text-sm text-white md:ml-5 md:text-lg"
+          >Tag</span
+        >
+      </a>
+    </section>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/84f87a4f79.js"
+      crossorigin="anonymous"></script>
+    <script src="./js/fslightbox.js"></script>
+  </body>
+</html>
