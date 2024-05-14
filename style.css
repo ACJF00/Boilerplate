@@ -17,3 +17,11 @@
 .subtitle-span {
   @apply text-[14px] lg:text-lg uppercase text-bsecondary;
 }
+
+.btn-primary {
+  @apply px-4 py-2 font-bold text-white transition-all duration-300 border rounded bg-bprimary dark:bg-bprimary hover:bg-white dark:hover:bg-bprimary hover:text-bprimary border-bprimary/10 dark:border-bprimary w-fit;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 font-bold transition-all duration-300 bg-white border rounded dark:bg-bprimary hover:bg-bprimary dark:hover:bg-bprimary hover:dark:text-white text-bprimary hover:text-white border-bprimary/10 dark:border-bsecondary w-fit;
+}

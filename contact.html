@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=".././style/output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Boilerplate</title>
+  </head>
+  <body>
+    <nav
+      class="fixed w-screen border-gray-200 bg-bprimary z-[9999] h-20 flex top-0">
+      <div
+        class="absolute w-1/2 h-full heropattern-graphpaper-white opacity-40"></div>
+      <div
+        class="absolute top-0 w-1/2 h-full bg-gradient-to-r from-transparent to-bprimary"></div>
+      <div
+        class="z-10 flex flex-wrap items-center content-center justify-between w-full max-w-screen-xl p-4 mx-auto">
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="https://placehold.co/100x50" class="h-14" alt="Logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-xl md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14">
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <ul
+            class="flex flex-col items-center p-4 mt-4 font-medium text-white border border-gray-100 rounded-xl md:p-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <li>
+              <a
+                href="/"
+                class="block rounded md:bg-transparent"
+                aria-current="page"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarHeroLink"
+                data-dropdown-toggle="dropdownNavbarHero"
+                data-dropdown-trigger="hover"
+                class="flex items-center justify-between w-full px-3 py-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 md:w-auto hover:text-bsecondary">
+                Services
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6">
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbarHero"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 shadow rounded-xl w-44">
+                <ul
+                  class="py-2 text-sm text-gray-700"
+                  aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a
+                      href="/chauffage.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Page 1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/salles-de-bain.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Page 2</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/energies-renouvelables.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Page 3</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="/galerie.html"
+                class="block px-3 py-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bsecondary md:p-0"
+                >Galerie photos</a
+              >
+            </li>
+            <li>
+              <a
+                href="/contact.html"
+                class="block px-3 py-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-bsecondary md:p-0"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+      data-aos="fade-up"
+      class="flex flex-col gap-8 pb-16 m-auto mt-20 site-wrap lg:flex-row">
+      <div class="w-full bg-bprimary/10 lg:w-1/2">
+        <div class="max-w-screen-md px-4 py-8 mx-auto lg:py-16">
+          <h2
+            class="flex items-center text-4xl font-bold border-l-8 border-bprimary dark:border-bsecondary pl-4 w-fit m-auto min-h-[4rem] tracking-tight mb-4">
+            Nous contacter
+          </h2>
+          <!-- <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p> -->
+          <form
+            action="#"
+            class="w-full p-8 m-auto space-y-8 bg-white lg:w-9/12">
+            <div>
+              <label for="email" class="block mb-2 text-sm font-medium"
+                >Adresse email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="shadow-sm border border-bprimary text-sm focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                placeholder="contact@charlymuziotti.fr"
+                required />
+            </div>
+            <div>
+              <label for="subject" class="block mb-2 text-sm font-medium"
+                >Objet</label
+              >
+              <input
+                type="text"
+                id="subject"
+                class="block w-full p-3 text-sm border shadow-sm border-bprimary dark:border-bsecondary focus:ring-primary-500 focus:border-primary-500"
+                placeholder="Quel est l'objet de votre message ?"
+                required />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="block mb-2 text-sm font-medium"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                rows="6"
+                class="block p-2.5 w-full text-sm shadow-sm border border-bprimary dark:border-bsecondary focus:ring-primary-500 focus:border-primary-500"
+                placeholder="Comment pouvons-nous vous aider ?"></textarea>
+            </div>
+            <button type="submit" class="flex m-auto btn-primary">
+              J'envoie le message
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="w-full mt-8 lg:w-1/2 lg:mt-0">
+        <div
+          class="sticky flex flex-col w-full max-w-screen-md gap-4 px-8 py-16 m-auto mx-auto border top-28 border-bprimary dark:border-bsecondary lg:w-9/12">
+          <h3
+            class="flex items-center text-4xl font-bold border-l-8 border-bprimary dark:border-bsecondary pl-4 w-fit m-auto min-h-[4rem] tracking-tight">
+            Où nous trouver ?
+          </h3>
+          <div class="m-auto w-fit">
+            <a href="#" class="openPopup">
+              <button class="btn-secondary">Contactez-nous</button>
+            </a>
+          </div>
+          <p>Avenue des Champs-Elyséees</p>
+          <div>
+            <iframe
+              class="w-11/12 h-40 m-auto"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.7710697725984!2d6.896139176734517!3d49.18593057137841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4795b3ea114f8649%3A0x1e924c17f1fb9aa9!2sNali%20Restaurant%20%26%20Lounge!5e0!3m2!1sfr!2sfr!4v1701066160616!5m2!1sfr!2sfr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <p>
+            <i class="pr-4 fas fa-phone text-bprimary dark:text-bsecondary"></i>
+            <a
+              href="tel:0614893745"
+              class="transition-all duration-300 hover:text-bprimary"
+              >06 14 89 37 45</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/84f87a4f79.js"
+      crossorigin="anonymous"></script>
+    <script src="./js/fslightbox.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
