@@ -25,3 +25,7 @@
 .btn-secondary {
   @apply px-4 py-2 font-bold transition-all duration-300 bg-white border rounded dark:bg-bprimary hover:bg-bprimary dark:hover:bg-bprimary hover:dark:text-white text-bprimary hover:text-white border-bprimary/10 dark:border-bsecondary w-fit;
 }
+
+.link-active {
+  @apply underline;
+}

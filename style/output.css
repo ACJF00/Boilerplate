@@ -3234,6 +3234,10 @@ video {
   }
 }
 
+.link-active {
+  text-decoration-line: underline;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
