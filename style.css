@@ -29,3 +29,7 @@
 .link-active {
   @apply underline;
 }
+
+.section-1 {
+  @apply mt-[80px];
+}
