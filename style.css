@@ -2,15 +2,25 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* //////////////////////// GENERAL //////////////////////// */
 .site-wrap {
   @apply justify-between max-w-screen-xl py-16 mx-auto;
 }
 
+.section-1 {
+  @apply mt-[80px];
+}
+
+.link-active {
+  @apply underline;
+}
+
+/* //////////////////////// TITLES //////////////////////// */
 .title-primary {
   @apply text-4xl font-bold;
 }
 
-.h2-big {
+.title-secondary {
   @apply lg:text-[40px] font-medium leading-[50px] text-[26px] mb-4;
 }
 
@@ -18,6 +28,7 @@
   @apply text-[14px] lg:text-lg uppercase text-bsecondary;
 }
 
+/* //////////////////////// BUTTONS //////////////////////// */
 .btn-primary {
   @apply px-4 py-2 font-bold text-white transition-all duration-300 border rounded bg-bprimary dark:bg-bprimary hover:bg-white dark:hover:bg-bprimary hover:text-bprimary border-bprimary/10 dark:border-bprimary w-fit;
 }
@@ -26,10 +37,25 @@
   @apply px-4 py-2 font-bold transition-all duration-300 bg-white border rounded dark:bg-bprimary hover:bg-bprimary dark:hover:bg-bprimary hover:dark:text-white text-bprimary hover:text-white border-bprimary/10 dark:border-bsecondary w-fit;
 }
 
-.link-active {
-  @apply underline;
+/* //////////////////////// CART //////////////////////// */
+
+.cart-open {
+  right: 0;
 }
 
-.section-1 {
-  @apply mt-[80px];
+.cart-close {
+  right: -100%;
+}
+
+.liked-products-open {
+  right: 33.333333%;
+}
+
+.liked-products-close {
+  right: -100%;
+}
+
+.open {
+  left: 0;
+  position: relative;
 }
