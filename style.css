@@ -2,9 +2,16 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* //////////////////////// FONTS //////////////////////// */
+body {
+  font-family: "Spectral", sans-serif;
+}
+
 /* //////////////////////// GENERAL //////////////////////// */
 .site-wrap {
-  @apply justify-between max-w-screen-xl py-16 mx-auto;
+  @apply max-w-screen-xl pt-32 mx-auto;
 }
 
 .section-1 {
@@ -17,7 +24,7 @@
 
 /* //////////////////////// TITLES //////////////////////// */
 .title-primary {
-  @apply text-4xl font-bold;
+  @apply mb-16 text-5xl font-medium;
 }
 
 .title-secondary {
@@ -30,11 +37,11 @@
 
 /* //////////////////////// BUTTONS //////////////////////// */
 .btn-primary {
-  @apply px-4 py-2 font-bold text-white transition-all duration-300 border rounded bg-bprimary dark:bg-bprimary hover:bg-white dark:hover:bg-bprimary hover:text-bprimary border-bprimary/10 dark:border-bprimary w-fit;
+  @apply px-4 py-2 font-bold text-white transition-all duration-300 border rounded bg-bprimary hover:bg-white hover:text-bprimary border-bprimary w-fit;
 }
 
 .btn-secondary {
-  @apply px-4 py-2 font-bold transition-all duration-300 bg-white border rounded dark:bg-bprimary hover:bg-bprimary dark:hover:bg-bprimary hover:dark:text-white text-bprimary hover:text-white border-bprimary/10 dark:border-bsecondary w-fit;
+  @apply px-4 py-2 font-bold transition-all duration-300 bg-white border rounded hover:bg-bprimary text-bprimary hover:text-white hover:border-white w-fit;
 }
 
 /* //////////////////////// CART //////////////////////// */
@@ -53,4 +60,30 @@
 
 .liked-products-close {
   right: -100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #bf242e;
 }
