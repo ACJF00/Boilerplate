@@ -11,7 +11,7 @@ body {
 
 /* //////////////////////// GENERAL //////////////////////// */
 .site-wrap {
-  @apply max-w-screen-xl pt-32 mx-auto;
+  @apply max-w-screen-xl px-8 pt-32 mx-auto lg:px-0;
 }
 
 .section-1 {

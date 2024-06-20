@@ -17,7 +17,7 @@
       <div
         class="z-10 flex flex-wrap items-center content-center justify-between w-full max-w-screen-xl p-4 mx-auto">
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="https://placehold.co/100x50" class="h-14" alt="Logo" />
+          <img src="./assets/logo-white.png" class="h-14" alt="Logo" />
         </a>
         <button
           data-collapse-toggle="navbar-dropdown"
@@ -52,14 +52,6 @@
               >
             </li>
 
-            <li>
-              <a
-                href="/a-propos.html"
-                class="block rounded md:bg-transparent navlink"
-                aria-current="page"
-                >A propos</a
-              >
-            </li>
             <li>
               <button
                 id="dropdownNavbarHeroLink"
@@ -126,7 +118,22 @@
                 >Contact</a
               >
             </li>
+            <li>
+              <a
+                href="/a-propos.html"
+                class="block rounded navlink btn-secondary"
+                aria-current="page"
+                >Connexion</a
+              >
+            </li>
           </ul>
+          <!-- <div
+            id="desktop-header-icon"
+            class="absolute top-0 right-0 flex items-center justify-end gap-4 p-4 lg:right-10">
+            <i
+              id="cart-icon"
+              class="duration-75 cursor-pointer fa-solid fa-cart-shopping hover:scale-110 text-bsecondary"></i>
+          </div> -->
         </div>
       </div>
     </nav>
@@ -148,14 +155,21 @@
           d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
       </svg>
     </button>
+
     <section
-      data-aos="fade-up"
-      class="flex flex-col gap-8 pb-16 m-auto section-1 site-wrap lg:flex-row">
-      <div class="w-full bg-bprimary/10 lg:w-1/2">
+      class="flex items-center px-8 py-6 text-white section-1 bg-bprimary"
+      style="
+        background: url('./assets/fond.png') repeat;
+        background-size: contain;
+      ">
+      <h1 class="title-primary !mb-0">Nous contacter</h1>
+    </section>
+    <section data-aos="fade-up" class="flex gap-8 pb-16">
+      <div class="w-full bg-bprimary/10">
         <div class="max-w-screen-md px-4 py-8 mx-auto lg:py-16">
           <h2
             class="flex items-center text-4xl font-bold border-l-8 border-bprimary dark:border-bsecondary pl-4 w-fit m-auto min-h-[4rem] tracking-tight mb-4">
-            Nous contacter
+            Envoyez un message
           </h2>
           <!-- <p class="mb-8 font-light text-center text-gray-500 lg:mb-16 sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p> -->
           <form
@@ -197,40 +211,6 @@
               J'envoie le message
             </button>
           </form>
-        </div>
-      </div>
-      <div class="w-full mt-8 lg:w-1/2 lg:mt-0">
-        <div
-          class="sticky flex flex-col w-full max-w-screen-md gap-4 px-8 py-16 m-auto mx-auto border top-28 border-bprimary dark:border-bsecondary lg:w-9/12">
-          <h3
-            class="flex items-center text-4xl font-bold border-l-8 border-bprimary dark:border-bsecondary pl-4 w-fit m-auto min-h-[4rem] tracking-tight">
-            Où nous trouver ?
-          </h3>
-          <div class="m-auto w-fit">
-            <a href="#" class="openPopup">
-              <button class="btn-secondary">Contactez-nous</button>
-            </a>
-          </div>
-          <p>Avenue des Champs-Elyséees</p>
-          <div>
-            <iframe
-              class="w-11/12 h-40 m-auto"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.7710697725984!2d6.896139176734517!3d49.18593057137841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4795b3ea114f8649%3A0x1e924c17f1fb9aa9!2sNali%20Restaurant%20%26%20Lounge!5e0!3m2!1sfr!2sfr!4v1701066160616!5m2!1sfr!2sfr"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <p>
-            <i class="pr-4 fas fa-phone text-bprimary dark:text-bsecondary"></i>
-            <a
-              href="tel:0614893745"
-              class="transition-all duration-300 hover:text-bprimary"
-              >06 14 89 37 45</a
-            >
-          </p>
         </div>
       </div>
     </section>
